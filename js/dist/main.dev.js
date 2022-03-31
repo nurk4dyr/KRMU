@@ -8,7 +8,18 @@ document.onreadystatechange = function () {
     pagination: false,
     gap: '100px',
     fixedWidth: '560px',
-    wheel: true
+    wheel: true,
+    breakpoints: {
+      1920: {
+        fixedWidth: '30%',
+        gap: '70px'
+      },
+      1440: {
+        fixedWidth: '35%',
+        gap: '60px',
+        perPage: 2
+      }
+    }
   });
   index_splide.mount();
 };

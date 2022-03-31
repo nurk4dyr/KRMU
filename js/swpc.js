@@ -31,6 +31,13 @@ document.onreadystatechange = function() {
             height: '830px',
             gap: '3em',
             drag: true,
+
+            breakpoints: {
+                1920: {
+                    width: '600px',
+                    height: '725px'
+                }
+            }
         } );
 
         splide.on('pagination:mounted', function(data) {

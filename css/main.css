@@ -281,6 +281,13 @@ body {
 .card {
     cursor: pointer;
     user-select: none;
+    position: relative;
+    width: 560px;
+    height: 760px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 
@@ -340,17 +347,10 @@ body {
 
 
 #swp_4.card {
-    position: relative;
-    width: 560px;
-    height: 760px;
-    border: 1px solid #fff;
-    border-radius: 10px;
     background-image: url(../images/gallery/g_4.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    overflow: hidden;
-    z-index: 1;
 }
 
 #swp_4.card::after {
@@ -370,17 +370,10 @@ body {
 
 
 #swp_2.card {
-    position: relative;
-    width: 560px;
-    height: 760px;
-    border: 1px solid #fff;
-    border-radius: 10px;
     background-image: url(../images/gallery/g_2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    overflow: hidden;
-    z-index: 1;
 }
 
 #swp_2.card::after {
@@ -623,5 +616,133 @@ body {
 
 .splide_main__pagination--custom .splide__pagination__page.is-active {
     background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1921px) {
+    .card {
+        width: 100%;
+        height: 650px;
+    }
+
+    .heading__title {
+        font-size: 48px;
+    }
+
+    #splide_main-track {
+        padding-top: 60px!important;
+    }
+
+    .description__name {
+        margin: 20px 0;
+        font-size: 42px;
+    }
+
+    .about__title {
+        font-size: 34px;
+    }
+
+    .description__number {
+        font-size: 12px;
+    }
+
+    .contacts__map {
+        width: 650px;
+    }
+
+    .about {
+        padding-top: 50px;
+        height: 75vh;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1441px) {
+    
+    #index_splide .splide__track {
+        padding-top: 60px!important;
+    }
+
+    .heading {
+        margin-top: 100px;
+        width: 450px!important;
+        min-width: 450px!important;
+    }
+
+    .card {
+        height: 570px;
+    }
+
+    .card__title {
+        font-size: 32px;
+    }
+
+    .card__desc {
+        font-size: 12px;
+        margin: 20px 0;
+    }
+
+    .heading__title {
+        font-size: 38px;
+    }
+
+    .heading__text {
+        font-size: 12px;
+    }
+
+    .heading__button,
+    .card__button {
+        padding: 8px 40px;
+        font-size: 14px;
+    }
+
+    .logo__img-g {
+        width: 100px;
+    }
+
+    .logo__img-m {
+        width: 85px;
+    }
+
+    .socials__text {
+        font-size: 11px;
+    }
+
+    .socials__icon {
+        font-size: 20px;
+    }
+
+    .socials__link:last-child .socials__icon {
+        font-size: 24px;
+    }
+
+    .footer__socials {
+        width: 150px;
+    }
+
+    .footer {
+        align-items: center;
+    }
+
+    .nav__item {
+        font-size: 12px;
+    }
+
 }
 
