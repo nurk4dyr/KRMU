@@ -10,6 +10,10 @@ html, body {
     color: #fff;
 }
 
+body {
+    position: relative;
+}
+
 
 .container {
     padding: 0 5%;
