@@ -19,6 +19,12 @@ document.onreadystatechange = function() {
                 fixedWidth: '35%',
                 gap: '60px',
                 perPage: 2
+            },
+
+            1280: {
+                fixedWidth: '32%',
+                gap: '35px',
+                perPage: 3
             }
         }
     });

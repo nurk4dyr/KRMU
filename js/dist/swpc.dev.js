@@ -33,6 +33,10 @@ document.onreadystatechange = function () {
         1920: {
           width: '600px',
           height: '725px'
+        },
+        1440: {
+          width: '470px',
+          height: '550px'
         }
       }
     });

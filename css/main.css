@@ -744,5 +744,88 @@ body {
         font-size: 12px;
     }
 
+    .description__name {
+        font-size: 34px;
+        margin: 10px 0;
+    }
+
+    .description__number {
+        font-size: 10px;
+    }
+
+    .description__par {
+        font-size: 12px;
+        margin: 15px 0;
+    }
+
+    .about {
+        padding-top: 30px;
+    }
+
+    .about__title {
+        font-size: 26px;
+    }
+
+    .contacts__map {
+        width: 500px;
+        height: 350px;
+    }
+
+    .about__contacts {
+        display: flex;
+        justify-content: end;
+    }
+
+    .contacts__title,
+    .address__title
+    .address__text {
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1281px) {
+    
+    .logo__img-g {
+        width: 90px;
+    }
+
+    .logo__img-m {
+        width: 75px;
+        margin-top: 25px;
+    }
+
+    .logo__text {
+        font-size: 14px;
+    }
+
+    .card {
+        height: 500px;
+    }
+
+    .heading {
+        margin-right: 10%!important;
+    }
+
+    .card__number {
+        font-size: 10px;
+    }
+
+    .card__title {
+        font-size: 28px;
+    }
+
+    .card__desc {
+        font-size: 11px;
+    }
+
+    .card__button {
+        padding: 5px 25px;
+        font-size: 12px;
+    }
+
 }
 
