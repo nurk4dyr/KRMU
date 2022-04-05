@@ -774,6 +774,10 @@ body {
 
 
 @media screen and (max-width: 1281px) {
+
+    .footer {
+        align-items: center;
+    }
     
     .logo__img-g {
         width: 90px;
