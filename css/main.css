@@ -1174,7 +1174,7 @@ body {
     }
 
     body {
-        overflow: unset!important;
+        overflow-y: unset!important;
         overflow-x: hidden !important;
     }
 
@@ -1207,8 +1207,16 @@ body {
         flex-shrink: unset;
     }
 
+    #splide_main-list {
+        flex-direction: column;
+    }
+
     .images {
         width: unset;
+    }
+
+    .splide_img .splide__arrows button {
+        height: 100%;
     }
 }
 
@@ -1225,6 +1233,26 @@ body {
 
     .header-mobile__menu {
         transition: 0.3s all;
+    }
+
+    .description__number {
+        font-size: 13px;
+    }
+
+    #mobile.images {
+        margin: 20px 0 70px;
+    }
+
+    .description__par {
+        font-size: 18px;
+    }
+
+    .description__name {
+        font-size: 38px;
+    }
+
+    #splide_main-list > * {
+        margin-bottom: 150px;
     }
 
 }

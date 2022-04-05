@@ -13,7 +13,7 @@ document.onreadystatechange = function() {
         breakpoints: {
 
             768: {
-                destroy: 'completely'
+                destroy: true
             }
         }
     });
@@ -75,4 +75,15 @@ document.onreadystatechange = function() {
         splide.mount();
     }
 
+}
+
+
+
+document.addEventListener('touchmove', scrollEvent);
+
+let header = document.querySelector('.header');
+
+
+function scrollEvent() {
+    console.log(window.scrollY)
 }

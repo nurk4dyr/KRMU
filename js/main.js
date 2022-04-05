@@ -8,7 +8,7 @@ document.onreadystatechange = function() {
         gap: '100px',
         fixedWidth: '560px',
         wheel: true,
-        drag: true,
+        drag: 'free',
 
         breakpoints: {
             1920: {
