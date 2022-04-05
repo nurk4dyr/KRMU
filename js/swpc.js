@@ -12,6 +12,10 @@ document.onreadystatechange = function() {
         speed: 900,
         breakpoints: {
 
+            1440: {
+                drag: true
+            },
+
             768: {
                 destroy: true
             }
