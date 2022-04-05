@@ -16,7 +16,7 @@ document.onreadystatechange = function() {
                 drag: true
             },
 
-            768: {
+            800: {
                 destroy: true
             }
         }
