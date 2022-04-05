@@ -1229,7 +1229,7 @@ body {
     }
 
     .description {
-        width: auto;
+        width: 100%;
         display: block;
         padding: 0;
     }
@@ -1310,6 +1310,7 @@ body {
 
     .contacts__map {
         height: 400px;
+        max-width: unset;
     }
 
     .contacts__title, .address__title, .address__text {
