@@ -6,13 +6,14 @@ document.onreadystatechange = function() {
         height: '100vh',
         wheel    : true,
         waitForTransition: true,
-        drag: true,
+        drag: false,
         noDrag: '.images',
         gap: '5em',
         speed: 900,
         breakpoints: {
-            640: {
-                destroy: true
+
+            768: {
+                destroy: 'completely'
             }
         }
     });
@@ -40,6 +41,29 @@ document.onreadystatechange = function() {
                 1440: {
                     width: '470px',
                     height: '550px'
+                },
+                1280: {
+                    width: '35%',
+                    height: '500px'
+                },
+
+                1680: {
+                    width: '30%',
+                    height: '500px'
+                },
+
+                1366: {
+                    width: '450px',
+                    height: '500px'
+                },
+
+                1024: {
+                    width: '550px',
+                    height: '500px'
+                },
+
+                768: {
+                    width: '100%'
                 }
             }
         } );

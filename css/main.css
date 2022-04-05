@@ -1,5 +1,4 @@
 @import url(fonts.css);
-@import url(media.css);
 
 
 html, body {
@@ -13,6 +12,95 @@ html, body {
 body {
     position: relative;
 }
+
+
+
+
+.bd {
+    animation: global-opacity 1s;
+}
+
+@keyframes global-opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+.anim_left {
+    animation: anim-left-to-right 0.75s;
+}
+
+@keyframes anim-left-to-right {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.anim_right {
+    animation: anim-right-to-left 0.75s;
+}
+
+@keyframes anim-right-to-left {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.anim_top {
+    animation: anim-top-to-bottom 0.75s;
+}
+
+@keyframes anim-top-to-bottom {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.anim_bottom {
+    animation: anim-bottom-to-top 0.75s;
+}
+
+@keyframes anim-bottom-to-top {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 
 
 .container {
@@ -49,6 +137,7 @@ body {
 .splide_img .splide__arrows button {
     position: absolute;
     width: 70px;
+    height: 92%;
     background: none;
     appearance: none;
     outline: none;
@@ -206,9 +295,18 @@ body {
     display: none;
 }
 
+#desktop.images {
+    display: block;
+}
+
+#mobile.images {
+    display: none;
+}
+
 
 
 .footer {
+    pointer-events: none;
     position: absolute;
     width: 100%;
     height: 90px;
@@ -219,6 +317,7 @@ body {
 }
 
 .footer__socials {
+    pointer-events: all;
     width: 160px;
     height: 45px;
 }
@@ -575,9 +674,8 @@ body {
 }
 
 .splide_img__pagination--custom .splide__pagination__page {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
+    padding: 5px;
+    border-radius: 50%;
     border: 1px solid #fff;
     background-color: transparent;
     margin: 7px 0;
@@ -603,9 +701,8 @@ body {
 }
 
 .splide_main__pagination--custom button {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
+    padding: 5px;
+    border-radius: 50%;
     border: 1px solid #fff;
     background-color: transparent;
     margin: 7px 0;
@@ -672,6 +769,209 @@ body {
 
 
 
+
+
+
+
+@media screen and (max-width: 1281px) {
+    
+    .logo__img-g {
+        width: 90px;
+    }
+
+    .logo__img-m {
+        width: 75px;
+        margin-top: 25px;
+    }
+
+    .logo__text {
+        font-size: 14px;
+    }
+
+    .card {
+        height: 500px;
+    }
+
+    .heading {
+        margin-right: 10%!important;
+    }
+
+    .card__number {
+        font-size: 10px;
+    }
+
+    .card__title,
+    .description__name {
+        font-size: 28px;
+    }
+
+    .card__desc,
+    .description__par {
+        font-size: 11px;
+    }
+
+    .card__button {
+        padding: 5px 25px;
+        font-size: 12px;
+    }
+
+    .splide_img .splide__arrows button:first-child,
+    .splide_img .splide__arrows button:last-child {
+        background-size: 20px;
+    }
+
+    #splide_main-track {
+        padding-top: 40px!important;
+    }
+
+    .about__title {
+        font-size: 24px;
+    }
+
+    .contacts__title, .address__title .address__text {
+        font-size: 10px;
+    }
+
+    .contacts__address {
+        width: 50%;
+    }
+
+    .contacts__map {
+        width: 450px;
+        height: 300px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1681px) {
+
+    #index_splide .splide__track {
+
+        padding-top: 60px!important;
+
+    }
+
+    .logo__img-g {
+        width: 100px;
+    }
+
+    .logo__img-m {
+        width: 85px;
+    }
+
+    .nav__item {
+        font-size: 13px;
+    }
+
+    .heading {
+        margin-top: 70px;
+        min-width: 420px;
+    }
+
+    .card {
+        height: 470px;
+    }
+
+    .card__number {
+        font-size: 12px;
+    }
+
+    .card__title {
+        font-size: 26px;
+    }
+
+    .card__desc {
+        font-size: 12px;
+        margin: 15px 0;
+    }
+
+    .card__button {
+        padding: 8px 35px;
+        font-size: 13px;
+    }
+
+    .heading__title {
+        font-size: 34px;
+    }
+
+    .heading__text {
+        font-size: 12px;
+    }
+
+    .heading__button {
+        padding: 8px 35px;
+        font-size: 13px;
+    }
+
+    .description__name {
+        font-size: 34px;
+        margin: 10px 0;
+    }
+
+    .description__par {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+
+    #splide_main-track {
+        padding-top: 40px!important;
+    }
+
+    .socials__text {
+        font-size: 10px;
+    }
+
+    .socials__icon {
+        font-size: 18px;
+    }
+
+    .socials__link:last-child .socials__icon {
+        font-size: 22px;
+    }
+
+    .footer__socials {
+        width: 135px;
+    }
+
+    .footer {
+        align-items: center;
+    }
+
+    .splide_main__pagination--custom button,
+    .splide_img__pagination--custom .splide__pagination__page {
+        padding: 4px;
+    }
+
+    .splide_img .splide__arrows button:first-child,
+    .splide_img .splide__arrows button:last-child {
+        background-size: 20px;
+    }
+
+    .description__number {
+        font-size: 11px;
+    }
+
+    .about__title {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .contacts__map {
+        width: 600px;
+        height: 400px;
+    }
+
+    .about__wrapper {
+        width: 600px;
+    }
+
+    .about__contacts {
+        display: flex;justify-content: end;
+    }
+    
+}
 
 @media screen and (max-width: 1441px) {
     
@@ -785,16 +1085,26 @@ body {
 }
 
 
+@media screen and (max-width: 1366px) {
 
+    .card {
+        height: 500px;
+    }
 
-@media screen and (max-width: 1281px) {
-    
+    #index_splide .splide__track {
+        padding-top: 40px!important;
+    }
+
+    #splide_main-track {
+        padding-top: 30px!important;
+    }
+
     .logo__img-g {
-        width: 90px;
+        width: 85px;
     }
 
     .logo__img-m {
-        width: 75px;
+        width: 70px;
         margin-top: 25px;
     }
 
@@ -802,30 +1112,119 @@ body {
         font-size: 14px;
     }
 
-    .card {
-        height: 500px;
+    .about__contacts {
+        width: auto;
+        max-width: unset
+    }
+
+    .about__wrapper {
+        width: auto;
+    }
+    
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .header__nav {
+        width: 27%;
     }
 
     .heading {
-        margin-right: 10%!important;
+        width: auto;
+        min-width: unset;
     }
 
-    .card__number {
-        font-size: 10px;
+    .description {
+        padding-right: 50px;
+        width: 60%;
     }
 
-    .card__title {
-        font-size: 28px;
+    .about__description {
+        width: 70%;
     }
 
-    .card__desc {
+    .contacts__map {
+        width: 400px;
+        height: 270px;
+    }
+
+    .description__par {
         font-size: 11px;
     }
 
-    .card__button {
-        padding: 5px 25px;
-        font-size: 12px;
+    .images {
+        width: 40%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header__nav {
+        display: none;
+    }
+
+    [class*='header-mobile'] {
+        display: flex;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    body {
+        overflow: unset!important;
+        overflow-x: hidden !important;
+    }
+
+    #splide_main {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        overflow: scroll;
+    }
+
+    #bg {
+        position: fixed;
+    }
+
+    #desktop.images {
+        display: none;
+    }
+
+    #mobile.images {
+        display: block;
+    }
+
+    .description {
+        width: auto;
+        display: block;
+        padding: 0;
+    }
+
+    #splide_main-list > * {
+        flex-shrink: unset;
+    }
+
+    .images {
+        width: unset;
+    }
+}
+
+
+@media only screen and (max-width: 786px) and (orientation: portrait) {
+
+    .card {
+        height: 700px;
+    }
+
+    .heading {
+        margin-top: 150px;
+    }
+
+    .header-mobile__menu {
+        transition: 0.3s all;
     }
 
 }
-
