@@ -44,7 +44,7 @@ document.onreadystatechange = function() {
                 perPage: 2
             },
 
-            768: {
+            800: {
                 fixedWidth: '70%',
                 gap: '50px',
                 perPage: 1

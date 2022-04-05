@@ -66,7 +66,7 @@ document.onreadystatechange = function() {
                     height: '500px'
                 },
 
-                768: {
+                800: {
                     width: '100%'
                 }
             }

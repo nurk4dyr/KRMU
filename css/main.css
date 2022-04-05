@@ -1234,7 +1234,7 @@ body {
     }
 
     .footer {
-        position: relative;
+        display: none;
     }
 
     .header-mobile__menu {
@@ -1263,22 +1263,6 @@ body {
 
     #splide_main-list > *:last-child {
         margin-bottom: 0;
-    }
-
-    .socials__text {
-        font-size: 14px;
-    }
-
-    .footer__socials {
-        width: 190px;
-    }
-
-    .socials__icon {
-        font-size: 24px;
-    }
-
-    .socials__link:last-child .socials__icon {
-        font-size: 28px;
     }
 
 }
