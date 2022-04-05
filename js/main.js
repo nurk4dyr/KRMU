@@ -44,7 +44,7 @@ document.onreadystatechange = function() {
                 perPage: 2
             },
 
-            800: {
+            835: {
                 fixedWidth: '70%',
                 gap: '50px',
                 perPage: 1
@@ -74,6 +74,25 @@ document.onreadystatechange = function() {
     document.querySelector('.header-mobile__burger').addEventListener('click', function() {
 
         document.querySelector('.header-mobile__menu').style.left = '0';
+        document.querySelector('.header-mobile__bgc').style.left = '0';
+        this.style.opacity = '0';
+
+    });
+
+
+    document.querySelector('.header-mobile__close').addEventListener('click', function() {
+
+        document.querySelector('.header-mobile__menu').style.left = '-100%';
+        document.querySelector('.header-mobile__bgc').style.left = '-100%';
+        document.querySelector('.header-mobile__burger').style.opacity = '1';
+
+    });
+
+    document.querySelector('.header-mobile__menu').addEventListener('click', function() {
+
+        document.querySelector('.header-mobile__menu').style.left = '-100%';
+        document.querySelector('.header-mobile__bgc').style.left = '-100%';
+        document.querySelector('.header-mobile__burger').style.opacity = '1';
 
     });
 
