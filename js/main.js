@@ -48,6 +48,12 @@ document.onreadystatechange = function() {
                 fixedWidth: '70%',
                 gap: '50px',
                 perPage: 1
+            },
+
+            600: {
+                fixedWidth: '98%',
+                gap: '70px',
+                perPage: 1
             }
         }
     });

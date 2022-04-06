@@ -13,6 +13,26 @@ body {
     position: relative;
 }
 
+.img_shwn {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    padding: 50px 0;
+}
+
+.img_shwn > img {
+    width: 60%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
 
 
 
@@ -474,14 +494,14 @@ body {
 /* Showpieces */
 
 
-#swp_4.card {
+#swp_1.card {
     background-image: url(../images/gallery/g_4.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
-#swp_4.card::after {
+#swp_1.card::after {
     content: "";
     position: absolute;
     top: 0;
@@ -498,13 +518,34 @@ body {
 
 
 #swp_2.card {
-    background-image: url(../images/gallery/g_2.jpg);
+    background-image: url(../images/gallery/c_2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
 #swp_2.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center center;
+}
+
+
+#swp_3.card {
+    background-image: url(../images/gallery/s_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#swp_3.card::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1265,11 +1306,6 @@ body {
     .footer {
         display: none;
     }
-
-    .header-mobile__menu {
-        transition: 0.3s all;
-    }
-
     .description__number {
         font-size: 13px;
     }
@@ -1280,6 +1316,10 @@ body {
 
     .description__par {
         font-size: 18px;
+    }
+
+    .description__number {
+        font-size: 14px;
     }
 
     .description__name {
@@ -1317,4 +1357,35 @@ body {
         font-size: 16px;
     }
 
+}
+
+
+
+@media only screen and (width: 1366px) and (height: 1024px) {
+
+    .content {
+        padding-top: 100px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #mobile.images {
+        margin-bottom: 30px;
+    }
+
+    .about__title {
+        font-size: 32px;
+    }
+
+    .header-mobile__burger img,
+    .header-mobile__close img {
+        width: 35px;
+    }
+
+    .heading {
+        margin-right: 70px !important;
+    }
 }

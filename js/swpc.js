@@ -69,6 +69,10 @@ document.onreadystatechange = function() {
 
                     835: {
                         width: '100%'
+                    },
+
+                    600: {
+                        height: '700px'
                     }
                 }
             } );
@@ -107,5 +111,13 @@ document.onreadystatechange = function() {
 
         });
     }
+
+
+
+    document.addEventListener('touchmove', function() {
+        console.log(window.pageYOffset)
+    });
+
+    Fancybox.bind('[data-fancybox]');
 
 }
