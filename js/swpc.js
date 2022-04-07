@@ -115,9 +115,18 @@ document.onreadystatechange = function() {
 
 
     document.addEventListener('touchmove', function() {
-        console.log(window.pageYOffset)
+        console.log(window.pageYOffset || document.documentElement.scrollTop)
     });
 
-    Fancybox.bind('[data-fancybox]');
+    Fancybox.bind('[data-fancybox]', {
+        dragToClose: false,
+
+        Toolbar: false,
+        closeButton: "top",
+
+        Image: {
+            zoom: false,
+        },
+    });
 
 }
