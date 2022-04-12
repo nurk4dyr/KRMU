@@ -73,6 +73,18 @@ document.onreadystatechange = function() {
 
                     600: {
                         height: '700px'
+                    },
+
+                    414: {
+                        height: '550px'
+                    },
+
+                    360: {
+                        height: '480px'
+                    },
+
+                    330: {
+                        height: '450px'
                     }
                 }
             } );

@@ -54,7 +54,7 @@ document.onreadystatechange = function() {
                 fixedWidth: '98%',
                 gap: '70px',
                 perPage: 1
-            }
+            },
         }
     });
 
