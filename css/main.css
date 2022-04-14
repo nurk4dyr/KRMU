@@ -798,6 +798,28 @@ body {
 
 
 
+.gallery {
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.gallery__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+
+.gallery__item {
+    flex: 15%;
+    min-width: 225px;
+    max-width: 400px;
+
+    margin: 5px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 
 

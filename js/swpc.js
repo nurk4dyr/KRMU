@@ -122,23 +122,27 @@ document.onreadystatechange = function() {
             document.querySelector('.header-mobile__burger').style.opacity = '1';
 
         });
+
+
+        Fancybox.bind('[data-fancybox]', {
+            dragToClose: false,
+
+            Toolbar: false,
+            closeButton: "top",
+
+            Image: {
+                zoom: false,
+            },
+        });
+
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            Toolbar: false,
+            closeButton: "top",
+
+            Image: {
+                zoom: false
+            }
+        });
     }
-
-
-
-    document.addEventListener('touchmove', function() {
-        console.log(window.pageYOffset || document.documentElement.scrollTop)
-    });
-
-    Fancybox.bind('[data-fancybox]', {
-        dragToClose: false,
-
-        Toolbar: false,
-        closeButton: "top",
-
-        Image: {
-            zoom: false,
-        },
-    });
 
 }
