@@ -821,6 +821,9 @@ body {
     overflow: hidden;
 }
 
+.gallery__title {
+    white-space: normal;
+}
 
 
 
