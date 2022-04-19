@@ -98,6 +98,18 @@ document.onreadystatechange = function() {
     } catch (e) {
         console.log(e);
     } finally {
+
+        let anim_el = document.querySelectorAll('[data-animation-rule]');
+
+        console.log(anim_el)
+
+        for (let i = 0; i < anim_el.length; i++) {
+            let rule = anim_el[i].getAttribute('data-animation-rule');
+            let anim_class = `anim_${rule}`;
+
+            anim_el[i].classList.add(anim_class);
+        }
+
         document.querySelector('.header-mobile__burger').addEventListener('click', function() {
 
             document.querySelector('.header-mobile__menu').style.left = '0';
