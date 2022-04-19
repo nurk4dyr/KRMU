@@ -9,6 +9,9 @@ html, body {
 }
 html {scrollbar-width: none !important;}
 
+button, a {outline: none !important; appearance: none !important;}
+button:focus, a:focus {outline: none !important; appearance: none !important;}
+
 body {
     position: relative;
     background-image: url(../images/g_background.png);
@@ -155,7 +158,7 @@ body {
 .splide_img .splide__arrows button {
     position: absolute;
     width: 70px;
-    height: 92%;
+    height: 100%;
     background: none;
     appearance: none;
     outline: none;
