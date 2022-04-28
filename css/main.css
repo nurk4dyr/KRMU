@@ -221,6 +221,11 @@ body {
     overflow: hidden;
 }
 
+#root.root_gl {
+    overflow-y: unset !important;
+    overflow-x: hidden !important;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
